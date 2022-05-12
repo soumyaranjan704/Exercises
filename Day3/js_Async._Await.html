@@ -1,0 +1,44 @@
+
+
+
+<!-- SYNTAX:
+async function name([param[, param[, ...param]]]) {
+  statements
+} -->
+
+<!-- 
+
+"async and await make promises easier to write"
+
+async makes a function return a Promise
+
+await makes a function wait for a Promise -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript async / await</h2>
+
+<p id="demo"></p>
+
+<script>
+function resolveAfter2Seconds() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('resolved');
+    }, 2000);
+  });
+}
+
+async function asyncCall() {
+  console.log('calling');
+  const result = await resolveAfter2Seconds();
+  console.log(result);
+  // expected output: "resolved"
+}
+
+asyncCall();</script>
+
+</body>
+</html>

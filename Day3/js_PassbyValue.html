@@ -1,0 +1,42 @@
+<!-- Pass By Value:
+ In Pass by value, function is called by directly passing the value of 
+the variable as an argument. So any changes made inside the function does not affect
+ the original value.
+
+In Pass by value, parameters passed as an arguments create its own copy.
+ So any changes made inside the function is made to the copied value not to
+  the original value . -->
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+    <script>
+        function Passbyvalue(a, b) {
+            let tmp;
+            tmp = b;
+            b = a;
+            a = tmp;
+            console.log(`Inside Pass by value
+		function -> a = ${a} b = ${b}`);
+        }
+
+        let a = 1;
+        let b = 2;
+        console.log(`Before calling Pass by value
+		Function -> a = ${a} b = ${b}`);
+
+        Passbyvalue(a, b);
+
+        console.log(`After calling Pass by value
+	Function -> a =${a} b = ${b}`);
+
+    </script>
+
+</body>
+
+</html>

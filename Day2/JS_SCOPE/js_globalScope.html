@@ -1,0 +1,40 @@
+<!-- 
+Variables declared Globally (outside any function) have Global Scope.
+
+Global variables can be accessed from anywhere in a JavaScript program.
+
+Variables declared with var, let and const are quite similar when declared outside a block.
+
+They all have Global Scope:
+var x = 2;       // Global scope
+let x = 2;       // Global scope
+const x = 2;       // Global scope
+
+
+
+------------Automatically Global-------
+If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.
+
+This code example will declare a global variable carName, even if the value is assigned inside a function. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Global Variables</h2>
+<p>If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable:</p>
+
+<p id="demo"></p>
+
+<script>
+myFunction();
+// code here can use carName as a global variable
+document.getElementById("demo").innerHTML = "I can display " + carName;
+
+function myFunction() {
+  carName = "Volvo";
+}
+</script>
+
+</body>
+</html>

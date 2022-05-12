@@ -1,0 +1,39 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Element Object</h1>
+<h2>The addEventListener() Method</h2>
+
+<p>Attach a click event to a button:</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+const element = document.getElementById("myBtn");
+//The addEventListener() method attaches an event handler to an element.
+element.addEventListener("mouseover", myFunction);
+element.addEventListener("mouseout", myThirdFunction);
+
+element.addEventListener("click", function() {
+  document.getElementById("demo").innerHTML = "Hello World";
+});
+
+function myFunction() {
+  document.getElementById("demo").innerHTML += "Moused over!<br>"
+}
+
+function myThirdFunction() {
+  document.getElementById("demo").innerHTML += "Moused out!<br>"
+}
+</script>
+
+</body>
+</html>

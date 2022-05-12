@@ -1,0 +1,40 @@
+<!-- 
+
+Local variables have Function Scope:
+
+They can only be accessed from within the function.
+
+Since local variables are only recognized inside their functions, 
+variables with the same name can be used in different functions.
+
+Local variables are created when a function starts, and deleted 
+when the function is completed. -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Scope</h2>
+
+<p><b>carName</b> is undefined outside myFunction():</p>
+
+<p id="demo1"></p>
+
+<p id="demo2"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+  let carName = "Volvo";
+  document.getElementById("demo1").innerHTML = typeof carName + " " + carName;
+}
+
+document.getElementById("demo2").innerHTML = typeof carName;
+</script>
+
+</body>
+</html>
