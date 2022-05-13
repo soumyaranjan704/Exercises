@@ -30,7 +30,8 @@ Day 2
 2. Why we require event handlers?
 3. Pass by value/reference.
 4. Async/await functions
-
+5. Object Keys (Object.keys()) 
+6. Object Entries (Object.entries())
 # SSL Certificate Installation Process
 1. First you need to download the temp file then unzip it.
 2. Put that folder in your root directory where angular cli is installed . My root directory  (C:\temp)
