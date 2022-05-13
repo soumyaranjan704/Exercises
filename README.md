@@ -38,12 +38,13 @@ Day 2
 
 
 
-# How to run the oidc_authentication_code
+# How to run the oidc_authentication_code project
+Its a completely angular project.
 Before you have to install the ssl certificates and AngularCli on your computer.
 
 1. First you need to download that file and then unzip that file.
 2. Open that file and turn on your cmd/terminal 
-3. Type  npm install (it will create all the dependencies).
+3. Type  npm install (it will create all the dependencies-wait for sometime till the process complete).
 4. Then run this command in your terminal(Copy whole command ) "ng serve --ssl --ssl-key c:\\temp\\localhost.key  --ssl-cert c:\\temp\\localhost.crt --port 4201".
 # ng serve --ssl --ssl-key c:\\temp\\localhost.key  --ssl-cert c:\\temp\\localhost.crt --port 4201
 5. After run this command then open your browser and type this URL "https://localhost:4201/".
